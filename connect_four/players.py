@@ -44,7 +44,7 @@ class GPTAgentPlayer(Player):
         prompt = (
             f"You're playing connect four, X goes first. You're {self.symbol}.\n"
             f"Current board:\n{self._ascii_board(board)}\n"
-            "End with your move in brackets like [A-G]."
+            "You may explain your reasoning if you wish, but you must end your response with your chosen column in brackets, like this: [A-G]"
         )
         self.logger.info(f"PROMPT:\n{prompt}")
 
